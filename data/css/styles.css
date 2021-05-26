@@ -1,0 +1,64 @@
+/*
+ * czResponsiveGrid. V1.0b
+ *
+ * Author & Copyright (c) 2021. César Pedro Zea Gómez <cesarzea@jaunesistemas.com>
+ * Contact to request your "free" license, any question or request or to hire me as a freelancer (freelance from 1999)
+ *
+ * More information at : https://www.cesarzea.com
+ * Documentation       : https://www.cesarzea.com/czResponsiveGrid
+ * GitHub repo         : https://github.com/cesarzea/czResponsiveGrid
+ *
+ * Please, use the issues section of the Git repository to report bugs or request improvements.
+ *
+ */
+
+
+.markdown p {
+    line-height: 1.5rem;
+    font-family: 'Open Sans', Helvetica-Neue, Arial, sans-serif;
+}
+
+.markdown table, td, th {
+    border: 1px solid lightgray;
+}
+
+.markdown td, th {
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.markdown table {
+    border-collapse: collapse;
+}
+
+.markdown img {
+    margin: 10px 0 10px 10px;
+}
+
+.markdown ul {
+    margin-block-start: 5px;
+}
+
+.markdown li {
+    line-height: 1.4rem;
+}
+
+
+.margin900 {
+    padding: 20px 20px 80px 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-left: 1px solid lightgrey !important;
+    border-right: 1px solid lightgrey !important;
+}
+
+.margin900::after {
+    margin-top: 60px;
+    padding-top: 5px;
+    margin-bottom: 40px;
+    float:right;
+    text-align: left;
+    border-top: 1px solid lightgrey !important;
+    content: "Conceived, developed and written by César Pedro Zea Gómez © (2021)";
+}

@@ -1,0 +1,76 @@
+/*
+ * czResponsiveGrid. V1.0b
+ *
+ * Author & Copyright (c) 2021. César Pedro Zea Gómez <cesarzea@jaunesistemas.com>
+ * Contact to request your "free" license, any question or request or to hire me as a freelancer (freelance from 1999)
+ *
+ * More information at : https://www.cesarzea.com
+ * Documentation       : https://www.cesarzea.com/czResponsiveGrid
+ * GitHub repo         : https://github.com/cesarzea/czResponsiveGrid
+ *
+ * Please, use the issues section of the Git repository to report bugs or request improvements.
+ *
+ */
+
+
+
+.markdown .blockquote {
+
+    display: table;
+    vertical-align: middle;
+    width:  100%;
+
+    background: #e9e9e9;
+
+    border-radius: 0px;
+    border: 1px  solid rgba(0,0,0, 0.1);
+    border-left: 10px solid rgba(0,0,0, 0.1);
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.markdown .markdown-icon {
+    width: 50px;
+    border-left: 1px  solid rgba(0,0,0, 0.1);;
+    display: table-cell;
+    margin: 5px 0px 5px 5px;
+    vertical-align: inherit;
+    text-align: center;
+    color: rgba(0,0,0, 0.3);
+}
+
+.markdown .markdown-icon ::before {
+    box-sizing: border-box;
+}
+
+.markdown .markdown-content {
+    display: table-cell;
+    padding: 15px 5px 15px 15px;
+}
+
+.markdown .blockquote p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 5px;
+}
+
+.markdown .markred {
+    background: #ffd9d9;
+}
+
+.markdown .markyellow {
+    background-color: #ffffba;
+}
+
+.markdown .markgreen {
+    background: #e8f9f4;
+}
+
+.markdown .markblue {
+    background: #dbefff;
+}
+

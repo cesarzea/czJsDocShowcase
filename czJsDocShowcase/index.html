@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+
+    <title>czJsDocShowcase</title>
+
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="9d3f7b81-569e-46e3-b223-d92422be7c93" type="text/javascript" src="bootstrap.js"></script>
+
+    <link rel="stylesheet" href="resources/prismjs/prism.css"/>
+
+
+    <script type='text/javascript' src="resources/showdown/showdown.min.js"></script>
+</head>
+<body>
+
+<script type='text/javascript' src="resources/prismjs/prism.js"></script>
+
+<script language="JavaScript">
+    var converter = new showdown.Converter();
+
+    window.jsysBrLinc = new function () {
+
+        let socket;
+        let scope;
+        let callBackMsg;
+
+        this.start = function (scope, callBackMsg) {
+            this.scope = scope;
+            this.callBackMsg = callBackMsg;
+
+            console.log("Starting BrowserLink - Jaune Sistemas (c) -")
+
+            const socketOpenListener = function () {
+                console.log((new Date()).toLocaleTimeString() + ': WebSocket Client Connected');
+                socket.send(JSON.stringify({action: 'hi'}));
+            };
+
+            const socketMessageListener = function (e) {
+                let d = JSON.parse(e.data);
+
+                if (d.action === 'ping') {
+                    socket.send(JSON.stringify({action: 'pong'}));
+                } else {
+                    Ext.callback(window.jsysBrLinc.callBackMsg, window.jsysBrLinc.scope, [d]);
+                }
+
+            };
+
+            const socketCloseListener = (event) => {
+                if (socket) {
+                    console.log((new Date()).toLocaleTimeString() + ': BrowserLink: connection closed.');
+                }
+                socket = new WebSocket('ws://localhost:9898/');
+                socket.addEventListener('open', socketOpenListener);
+                socket.addEventListener('message', socketMessageListener); //socketMessageListener);
+                socket.addEventListener('close', socketCloseListener);
+            };
+
+            socketCloseListener();
+        }
+
+        this.scopeEval = function (scope, script) {
+            return Function('"use strict";return (' + script + ')').bind(scope)();
+        }
+
+    }
+
+
+    jsysBrLinc.start(this, function (e) {
+        if (e.action === 'js') {
+            eval(e.js)
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

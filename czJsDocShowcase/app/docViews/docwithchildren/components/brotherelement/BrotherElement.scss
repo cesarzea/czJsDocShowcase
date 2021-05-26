@@ -1,0 +1,103 @@
+/*!
+ * czJsDocShowcase. V1.0b
+ *
+ * Author & Copyright (c) 2021. César Pedro Zea Gómez <cesarzea@jaunesistemas.com>
+ * Contact to request your "free" license, any question or request or to hire me as a freelancer (freelance from 1999)
+ *
+ * More information at : https://www.cesarzea.com
+ * Documentation       : https://www.cesarzea.com/czJsDocShowcase
+ * GitHub repo         : https://github.com/cesarzea/czJsDocShowcase
+ *
+ * Please, use the issues section of the Git repository to report bugs or request improvements.
+ *
+ */
+
+
+.brotherelement {
+
+}
+
+/* TITLE */
+.brotherelement .brother-doc-title > .x-panelheader {
+
+  z-index: 2;
+  transform: translateZ(0);
+
+  background-color: white !important; /* #f8f8f8 !important; */
+
+  border-top: grey solid 1px !important;
+  border-bottom: 0px;
+ /* border-bottom: lightgray solid 1px !important; */
+
+  cursor: pointer !important;
+}
+
+.brotherelement .brother-doc-title > .x-panelheader  .x-paneltitle {
+  color: #00435e !important;
+  padding: 5px 0 0 0;
+  cursor: pointer;
+}
+
+.brotherelement .brother-doc-title > .x-panelheader .x-text-el {
+  /*color: #025b80;*/
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding: 1px 0 0 5px;
+}
+
+.brotherelement .brother-doc-title .x-horizontal {
+  min-height: 35px !important;
+}
+
+.brotherelement .brother-doc-title .x-paneltool .x-icon-el {
+  display: none;
+}
+
+.brotherelement .brother-doc-title  .x-icon-el {
+  color: #00435e;
+}
+
+
+.brotherelement .brother-doc-title .x-horizontal {
+  min-height: 20px !important;
+}
+
+/* SUBTITLE */
+
+.brotherelement .brother-doc-subtitle > .x-panelheader {
+/*  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+*/
+  border-bottom: 1px solid lightgrey !important;
+  z-index: 2;
+  transform: translateZ(0);
+
+  background-color: white !important;
+  border-top: 0px;
+}
+
+.brotherelement .brother-doc-subtitle > .x-panelheader .x-paneltitle {
+  padding: 0;
+  cursor: pointer;
+}
+
+.brotherelement .brother-doc-subtitle > .x-panelheader .x-paneltitle .x-text-el {
+  color: grey !important;
+  font-size: 0.8rem !important;
+  line-height: 0.10rem !important;
+  padding: 0 0 5px 30px;
+}
+
+.brotherelement .brother-doc-subtitle > .x-panelheader .x-paneltitle .x-text-el p {
+  line-height: 0.10rem !important;
+}
+
+.brotherelement .brother-doc-subtitle > .x-panelheader .x-panelheader .x-icon-el {
+  color: #00435e !important;
+}
+
+
+.brotherelement .brother-doc-subtitle > .x-panelheader .x-horizontal {
+  min-height: 20px !important;
+}

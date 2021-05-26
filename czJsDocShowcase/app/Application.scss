@@ -1,0 +1,119 @@
+/*!
+ * czJsDocShowcase. V1.0b
+ *
+ * Author & Copyright (c) 2021. César Pedro Zea Gómez <cesarzea@jaunesistemas.com>
+ * Contact to request your "free" license, any question or request or to hire me as a freelancer (freelance from 1999)
+ *
+ * More information at : https://www.cesarzea.com
+ * Documentation       : https://www.cesarzea.com/czJsDocShowcase
+ * GitHub repo         : https://github.com/cesarzea/czJsDocShowcase
+ *
+ * Please, use the issues section of the Git repository to report bugs or request improvements.
+ *
+ */
+
+/*
+ *  This file can be used to set variables and supply global styling.  View specific 
+ *  styling should be located the view's corresponding scss file.
+ */
+$enable-font-awesome: dynamic(true);
+
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.north-panel .x-panel-body-el {
+  background-color: #f5f5f5;
+}
+
+
+
+.docBody {
+  background-color: #d2d2d2;
+}
+
+
+.doc-section {
+  background-color: #fbfbfb;
+  border-left: #efefef;
+  border-left-style: solid;
+  border-left-width: 23px;
+  border-right: #efefef;
+  border-right-style: solid;
+  border-right-width: 20px;
+}
+
+.clsJsDocDocumentation {
+  max-width: 1000px;
+  /* margin: auto;*/
+  background-color: white;
+  padding: 10px 20px 0px 20px;
+}
+
+.clsJsDocDefault {
+  border-top: 1px solid lightgray !important;
+  max-width: 1000px;
+  /*margin: auto;*/
+  background-color: white;
+  padding: 10px 20px 0px 20px;
+}
+
+.clsJsDocDefault p {
+  margin-block-start: 0;
+}
+
+.clsNamespaceSeeAlso {
+  max-width: 1000px;
+  /* margin: auto;*/
+  background-color: white;
+}
+
+.clsNamespaceSeeAlso p {
+  border: 1px solid lightgray !important;
+  max-width: 1000px;
+  /* margin: auto;*/
+  background-color: white;
+  margin: 0 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
+}
+
+
+.markdown p {
+  line-height: 1.5rem;
+  font-family: 'Open Sans',Helvetica-Neue,Arial,sans-serif;
+}
+
+.markdown table, td, th {
+  border: 1px solid lightgray;
+}
+
+.markdown td, th {
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.markdown table {
+  border-collapse: collapse;
+}
+
+.markdown img {
+  margin: 10px 0 10px 10px;
+}
+
+
+.markdown blockquote {
+  background: #eaeaea;
+  border-left: 10px solid #acacac;
+  margin: 1.5em 0px;
+  padding: 1em 10px;
+}
+
+.markdown blockquote p {
+  display: inline;
+}
+
+.markdown li {
+  line-height: 1.4rem;
+}

@@ -1,0 +1,68 @@
+/*!
+ * czJsDocShowcase. V1.0b
+ *
+ * Author & Copyright (c) 2021. César Pedro Zea Gómez <cesarzea@jaunesistemas.com>
+ * Contact to request your "free" license, any question or request or to hire me as a freelancer (freelance from 1999)
+ *
+ * More information at : https://www.cesarzea.com
+ * Documentation       : https://www.cesarzea.com/czJsDocShowcase
+ * GitHub repo         : https://github.com/cesarzea/czJsDocShowcase
+ *
+ * Please, use the issues section of the Git repository to report bugs or request improvements.
+ *
+ */
+
+
+
+
+
+.docWithChildren {
+  background-color: lightgray;
+}
+
+/* TITLE */
+
+.docWithChildren .main-doc-title > .x-panelheader {
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+
+  z-index: 5;
+  transform: translateZ(0);
+}
+
+.docWithChildren .main-doc-title > .x-panelheader .x-text-el {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  margin-left: 15px;
+}
+
+.docWithChildren .subtitle-tags {
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+
+  z-index: 5;
+  transform: translateZ(0);
+}
+
+.docWithChildren .subtitle-tags .x-displayfield .x-input-el {
+  padding-top: 0px !important;
+}
+
+.docWithChildren .subtitle-tags p {
+  line-height: 1rem !important;
+  padding: 0 10px 0 10px !important;
+}
+
+/* Background */
+
+.docWithChildren .docContent > .x-body-wrap-el > .x-body-el {
+  background-color: #efefef !important;
+}
+
+.docWithChildren .docContent .listElements {
+  border-bottom: grey;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid;
+}
